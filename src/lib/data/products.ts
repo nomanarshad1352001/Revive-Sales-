@@ -1,0 +1,136 @@
+import type { Product } from "../types";
+
+// ─── Revive Regenerative portfolio library ───────────────────────────────────
+// Seeded into the app store and editable at runtime (Product Library page).
+// Discontinued lines are retained for historical context but are excluded
+// from all active recommendations.
+
+export const SEED_PRODUCTS: Product[] = [
+  {
+    id: "p_avira",
+    name: "Avira RF",
+    category: "RF Microneedling",
+    deviceCategory: "rf-microneedling",
+    price: 89500,
+    status: "active",
+    pitch: "Bipolar RF microneedling platform — the flagship skin-remodeling device for med spas, dermatology and plastic surgery practices.",
+    fitKeywords: ["med spa", "dermatology", "skin", "resurfacing", "anti-aging", "acne", "scar", "microneedling", "facial", "injectables"],
+    discoveryQuestions: [
+      "Which device currently drives most of your skin-remodeling revenue?",
+      "How is your RF or microneedling utilization — fully booked or underused?",
+      "What would make a new platform worth replacing what you have?",
+    ],
+  },
+  {
+    id: "p_retraction",
+    name: "Retraction",
+    category: "Skin Tightening / RFAL",
+    deviceCategory: "tightening",
+    price: 96000,
+    status: "active",
+    pitch: "Radiofrequency-assisted skin retraction for post-lipo, post-weight-loss and facial laxity — the dedicated tightening answer RF microneedling is not.",
+    fitKeywords: ["tighten", "lift", "laxity", "plastic", "surgeon", "lipo", "body", "contouring", "weight", "glp-1", "bariatric", "facelift"],
+    discoveryQuestions: [
+      "When patients lose significant weight or finish liposuction, how do you address the residual skin laxity?",
+      "Do you currently offer a dedicated skin-tightening treatment, or are you managing that demand with RF microneedling alone?",
+      "Which tightening procedures do you refer out today, if any?",
+    ],
+  },
+  {
+    id: "p_emulsify",
+    name: "Emulsify",
+    category: "Ultrasonic Fat Emulsification",
+    deviceCategory: "fat-reduction",
+    price: 129000,
+    status: "active",
+    pitch: "Ultrasonic emulsification + sculpting platform for body-contouring programs — surgical-grade results with medical-spa economics.",
+    fitKeywords: ["body", "contouring", "lipo", "fat", "plastic", "surgeon", "weight", "glp-1", "bariatric", "wellness"],
+    discoveryQuestions: [
+      "How are you currently handling body-contouring demand — external RF/ultrasound, cryolipolysis, or referring to surgery?",
+      "What is your monthly coolsculpting or truSculpt cycle volume and margin?",
+      "If you could bring contouring in-house with one platform, what would need to be true?",
+    ],
+  },
+  {
+    id: "p_iblaze",
+    name: "iBlaze CO2",
+    category: "Fractional CO2 Laser",
+    deviceCategory: "co2",
+    price: 148000,
+    status: "active",
+    pitch: "Fractional CO2 + erbium platform for advanced resurfacing, scar revision and periorbital work — built for surgeon and dermatology volume.",
+    fitKeywords: ["plastic", "surgeon", "resurfacing", "scar", "skin", "dermatology", "oculoplastic", "facial", "mohs", "laser"],
+    discoveryQuestions: [
+      "What percentage of your surgical patients also book resurfacing — and on which device?",
+      "When was your current ablative platform last serviced, and what does that contract cost annually?",
+      "Would periorbital or scar-revision protocols open a new revenue line for you?",
+    ],
+  },
+  {
+    id: "p_fraclight",
+    name: "Fraclight IPL",
+    category: "IPL / Photofacial",
+    deviceCategory: "ipl",
+    price: 72500,
+    status: "active",
+    pitch: "High-throughput IPL for photofacials, pigment and vascular — the volume driver every med spa and laser clinic runs daily.",
+    fitKeywords: ["med spa", "photofacial", "ipl", "pigment", "rosacea", "vascular", "laser", "skin", "sun damage", "dermatology"],
+    discoveryQuestions: [
+      "How many photofacial sessions do you book per week, and which handpiece platform runs them?",
+      "What is your per-session consumable and service cost on your current IPL?",
+      "Where do pigment and vascular patients sit in your booking mix?",
+    ],
+  },
+  {
+    id: "p_colormax",
+    name: "Colormax",
+    category: "Picosecond Pigment & Tattoo",
+    deviceCategory: "pico",
+    price: 112000,
+    status: "active",
+    pitch: "Picosecond platform for pigment, tattoo removal and skin revitalization — the premium laser-clinic workhorse.",
+    fitKeywords: ["tattoo", "pigment", "pico", "laser clinic", "melasma", "sun spot", "laser"],
+    discoveryQuestions: [
+      "Do you currently turn away tattoo-removal or pigment cases for lack of a picosecond system?",
+      "What is your average package price for pigment correction, and how long do patients wait to book?",
+    ],
+  },
+  {
+    id: "p_hydrash",
+    name: "Hydra SH",
+    category: "Hydradermabrasion & Skin Health",
+    deviceCategory: "hydraderm",
+    price: 42000,
+    status: "active",
+    pitch: "Entry-gate hydra-dermabrasion and serum-infusion platform — the membership-engine device that fills the front of the treatment funnel.",
+    fitKeywords: ["med spa", "facial", "hydra", "skin health", "membership", "lash", "brow", "wellness", "injectables"],
+    discoveryQuestions: [
+      "Which entry-level treatment brings new patients through the door for the first time?",
+      "Do you run a membership program around monthly facials or skin-health plans?",
+      "What does a facial treatment room gross per hour today?",
+    ],
+  },
+  // ── Discontinued — retained in library, excluded from recommendations ──────
+  {
+    id: "p_agejet",
+    name: "AgeJET",
+    category: "Plasma Skin Regeneration",
+    deviceCategory: "plasma",
+    price: 0,
+    status: "discontinued",
+    pitch: "Discontinued line. Do not recommend; see manager for transition guidance on existing placements.",
+    fitKeywords: [],
+    discoveryQuestions: [],
+  },
+  {
+    id: "p_tensamax",
+    name: "TensaMax",
+    category: "RF Skin Tightening (legacy)",
+    deviceCategory: "rf-tightening-legacy",
+    price: 0,
+    status: "discontinued",
+    pitch: "Discontinued line. Retraction supersedes TensaMax for all new opportunities.",
+    fitKeywords: [],
+    discoveryQuestions: [],
+  },
+];
