@@ -95,7 +95,7 @@ export default function ScorecardPage() {
     <div className="space-y-5">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Section 13 · Scorecards</p>
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Scorecards</p>
           <h1 className="font-display mt-1 text-[clamp(1.6rem,2.6vw,2.2rem)] font-semibold">Rep Activity Scorecards</h1>
           <p className="mt-1 text-[0.88rem] text-[var(--ink-2)]">
             Logged activity vs role-configurable daily targets — scaled by workdays in the selected period. Revenue numbers reflect the demo dataset.

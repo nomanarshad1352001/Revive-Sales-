@@ -212,7 +212,7 @@ function EmailConciergeInner() {
   return (
     <div className="space-y-5">
       <div>
-        <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Section 10 · Email Concierge</p>
+        <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Email Concierge</p>
         <h1 className="font-display mt-1 text-[clamp(1.6rem,2.6vw,2.2rem)] font-semibold">Outlook AI Email Concierge</h1>
         <p className="mt-1 max-w-3xl text-[0.88rem] text-[var(--ink-2)]">
           Drafts personalized follow-ups from approved materials, sequences follow-ups, and records everything. <span className="font-bold">Simulated mode — no real emails are sent.</span> Production sending requires an IT-approved Microsoft Graph app registration.

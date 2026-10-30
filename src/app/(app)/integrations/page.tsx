@@ -75,7 +75,7 @@ export default function IntegrationsPage() {
   return (
     <div className="space-y-5">
       <div>
-        <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Section 11 · Integrations</p>
+        <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Integrations</p>
         <h1 className="font-display mt-1 text-[clamp(1.6rem,2.6vw,2.2rem)] font-semibold">CRM &amp; Email Integrations</h1>
         <p className="mt-1 max-w-3xl text-[0.88rem] text-[var(--ink-2)]">
           Nuvue remains the <span className="font-bold">official system of record</span>. Revive Sales Command is the field layer — it is designed to sync into Nuvue, not replace it.

@@ -177,5 +177,5 @@ NUVUE_API_KEY           # if/when Nuvue issues credentials
 
 - `CLAUDE.md` — architecture + conventions + step-by-step recipes for the exact changes you'll ask for later
 - `PROGRESS.md` — what's done, what's next
-- Tests run with `npx vitest run` (included in every delivery validation)
+- Tests run with `npx vitest run` — engine logic, store workflows (the Section 20 script), and a client-side render smoke test of every page
 - Recorded walkthrough & a supervised "you make the change" Claude Code session are part of the live handoff meeting — the scripts for both are in `PROGRESS.md`

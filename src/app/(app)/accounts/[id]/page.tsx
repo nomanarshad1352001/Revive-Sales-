@@ -61,10 +61,14 @@ export default function AccountDetailPage() {
   const account = useAppStore((s) => s.accounts.find((a) => a.id === id));
   const users = useAppStore((s) => s.users);
   const products = useAppStore((s) => s.products);
-  const contacts = useAppStore((s) => s.contacts.filter((c) => c.accountId === id));
-  const activities = useAppStore((s) => s.activities.filter((a) => a.accountId === id));
-  const tasks = useAppStore((s) => s.tasks.filter((t) => t.accountId === id && !t.done));
-  const routes = useAppStore((s) => s.routes.filter((r) => r.stops.some((st) => st.accountId === id && st.status !== "skipped")));
+  const allContacts = useAppStore((s) => s.contacts);
+  const allActivities = useAppStore((s) => s.activities);
+  const allTasks = useAppStore((s) => s.tasks);
+  const allRoutes = useAppStore((s) => s.routes);
+  const contacts = useMemo(() => allContacts.filter((c) => c.accountId === id), [allContacts, id]);
+  const activities = useMemo(() => allActivities.filter((a) => a.accountId === id), [allActivities, id]);
+  const tasks = useMemo(() => allTasks.filter((t) => t.accountId === id && !t.done), [allTasks, id]);
+  const routes = useMemo(() => allRoutes.filter((r) => r.stops.some((st) => st.accountId === id && st.status !== "skipped")), [allRoutes, id]);
   const setStage = useAppStore((s) => s.setStage);
   const setPriority = useAppStore((s) => s.setPriority);
   const updateAccount = useAppStore((s) => s.updateAccount);

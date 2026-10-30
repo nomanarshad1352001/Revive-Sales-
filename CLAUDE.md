@@ -14,6 +14,7 @@ A field-sales CRM / command center for Revive Regenerative (capital aesthetic eq
 4. **Assistant never mutates alone.** `src/lib/assistant.ts` returns review cards; saves happen only via user-confirmed actions.
 5. **Demo data is fictional.** Don't paste real CRM data, people, or accounts into seeds.
 6. All date math uses real stored timestamps (`lastVisitAt`, `lastContactAt`) — no fabricated recency.
+7. **Zustand selectors must return stable references.** Never put `.filter() / .map() / .slice()` inside `useAppStore((s) => ...)` — that allocates a new array every call and causes an infinite render loop. Select the raw array, then filter inside a `useMemo`. (A real production bug — pages crashed with "This page couldn't load". The `tests/smoke.test.tsx` suite exists to catch this.)
 
 ## File map (where things live)
 

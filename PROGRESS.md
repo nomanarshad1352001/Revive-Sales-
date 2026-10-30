@@ -40,7 +40,7 @@ Status of the functional first release (Sections 1–22). Updated with each deli
 - [x] Product Library: admin-editable; AgeJET & TensaMax discontinued and excluded
 - [x] Team management: add/deactivate/reassign users
 - [x] Settings: thresholds, targets, schedules, dataset reset, architecture & cost docs
-- [x] Automated test suite (22 tests, `npx vitest run`)
+- [x] Automated test suite (39 tests: engines, store workflows, and client-side smoke renders of every page — `npx vitest run`)
 - [x] README.md, CLAUDE.md, PROGRESS.md
 
 ## 🔜 Next phase (priced separately, not in this release)

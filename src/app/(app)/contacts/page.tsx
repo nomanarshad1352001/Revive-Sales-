@@ -52,7 +52,7 @@ export default function ContactsPage() {
     <div className="space-y-5">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Section 8 · Contacts</p>
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Contacts</p>
           <h1 className="font-display mt-1 text-[clamp(1.6rem,2.6vw,2.2rem)] font-semibold">Contacts Directory</h1>
           <p className="mt-1 text-[0.88rem] text-[var(--ink-2)]">
             <span className="font-bold text-[var(--ink)]">{contacts.length}</span> people across {new Set(contacts.map((c) => c.accountId)).size} practices · roles, preferences & product interests

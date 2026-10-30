@@ -223,7 +223,7 @@ function RoutesInner() {
     <div className="space-y-5">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Section 7 · Route Planning</p>
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Route Planning</p>
           <h1 className="font-display mt-1 text-[clamp(1.6rem,2.6vw,2.2rem)] font-semibold">Smart Daily Routes</h1>
           <p className="mt-1 max-w-2xl text-[0.88rem] text-[var(--ink-2)]">
             Build efficient field days from scheduled meetings and nearby prospects. <span className="font-bold">Planned stops are suggestions — they only count once you log the activity.</span>

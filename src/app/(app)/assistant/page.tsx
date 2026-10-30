@@ -119,7 +119,7 @@ export default function AssistantPage() {
       <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
         <div>
           <p className="flex items-center gap-1.5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">
-            <Sparkles size={12} /> Section 15 · AI Sales Assistant
+            <Sparkles size={12} /> AI Sales Assistant
           </p>
           <h1 className="font-display mt-1 text-[clamp(1.5rem,2.4vw,2.1rem)] font-semibold">Workspace Copilot</h1>
         </div>

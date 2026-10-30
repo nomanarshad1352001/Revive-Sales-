@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Button, Field, Modal } from "@/components/ui";
 import { useAppStore } from "@/lib/store";
 import type { Account, ActivityType, Priority, Stage } from "@/lib/types";
@@ -145,7 +145,8 @@ export function AccountModal({
   preset?: { city?: string; state?: "TX" | "OK" };
 }) {
   const router = useRouter();
-  const users = useAppStore((s) => s.users.filter((u) => u.active));
+  const allUsers = useAppStore((s) => s.users);
+  const users = useMemo(() => allUsers.filter((u) => u.active), [allUsers]);
   const addAccount = useAppStore((s) => s.addAccount);
   const updateAccount = useAppStore((s) => s.updateAccount);
   const currentUser = useAppStore((s) => s.users.find((u) => u.id === s.currentUserId));
@@ -417,7 +418,8 @@ export function ContactModal({
   accountId: string;
   edit?: import("@/lib/types").Contact | null;
 }) {
-  const products = useAppStore((s) => s.products.filter((p) => p.status === "active"));
+  const allProducts = useAppStore((s) => s.products);
+  const products = useMemo(() => allProducts.filter((p) => p.status === "active"), [allProducts]);
   const addContact = useAppStore((s) => s.addContact);
   const updateContact = useAppStore((s) => s.updateContact);
 

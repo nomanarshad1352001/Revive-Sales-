@@ -48,7 +48,7 @@ export default function ProductsPage() {
     <div className="space-y-5">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Section 5 · Portfolio Library</p>
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--brand)]">Portfolio Library</p>
           <h1 className="font-display mt-1 text-[clamp(1.6rem,2.6vw,2.2rem)] font-semibold">Product Library</h1>
           <p className="mt-1 max-w-2xl text-[0.88rem] text-[var(--ink-2)]">
             The approved internal portfolio. Gap intelligence and briefing recommendations read from this library at runtime — nothing is hard-coded into the AI engine. {canEdit ? "You can edit entries as " + roleLabel(me.role) + "." : "Editing is reserved for administrators and the RSM."}
